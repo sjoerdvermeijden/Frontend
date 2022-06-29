@@ -12,7 +12,7 @@ const imagemin = require('gulp-imagemin');
 const babelify = require('babelify');
 
 function styles() {
-    return gulp.src('./assets/src/scss/styles.scss')
+    return gulp.src('./assets/src/scss/**/*.scss')
     .pipe(sass())
     .pipe(autoprefixer('last 2 versions'))
     .pipe(cleanCSS())
