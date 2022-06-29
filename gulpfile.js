@@ -23,6 +23,7 @@ function styles() {
 
 // Scripts
 function scripts() {
+    return gulp.src('./assets/src/js/**/*.js')
     .pipe(source('script.min.js'))
     .pipe(buffer())
     .pipe(uglify())
