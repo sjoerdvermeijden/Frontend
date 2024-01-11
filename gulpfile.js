@@ -21,7 +21,7 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-// Scripts
+// Scriptz
 function scripts() {
     return gulp.src('./assets/src/js/**/*.js')
     .pipe(source('script.min.js'))
