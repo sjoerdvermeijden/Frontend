@@ -8,11 +8,14 @@ const autoprefixer = require('gulp-autoprefixer');
 const svgSprite = require('gulp-svg-sprite');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
+const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
+const browserify = require('browserify');
 const imagemin = require('gulp-imagemin');
 const babelify = require('babelify');
 
 function styles() {
-    return gulp.src('./assets/src/scss/**/*.scss')
+    return gulp.src('./assets/src/scss/styles.scss')
     .pipe(sass())
     .pipe(autoprefixer('last 2 versions'))
     .pipe(cleanCSS())
@@ -21,9 +24,16 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-// Scriptz
+// Scripts
 function scripts() {
-    return gulp.src('./assets/src/js/**/*.js')
+    var b = browserify({
+        entries: './assets/src/js/main.js',
+        debug: true,
+        // defining transforms here will avoid crashing your stream
+        transform: [babelify.configure({ presets: ["@babel/preset-env"] })]
+    });
+
+    return b.bundle()
     .pipe(source('script.min.js'))
     .pipe(buffer())
     .pipe(uglify())
