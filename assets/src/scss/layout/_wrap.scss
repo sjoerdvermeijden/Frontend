@@ -1,0 +1,14 @@
+.wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &--fluid {
+        max-width: none;
+    }
+
+    &--small {
+        max-width: 740px;
+    }
+
+}

@@ -1,0 +1,8 @@
+.header {
+	background: red;
+
+	@include tablet {}
+
+    @include desktop {}
+
+}

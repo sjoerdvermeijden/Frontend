@@ -1,0 +1,23 @@
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+[data="object-fit"] {
+	object-fit: cover;
+	height: 100%;
+}
+
+.icon {
+	position: relative;
+	display: inline-block;
+}
+
+.icon svg {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}

@@ -1,0 +1,39 @@
+// Width function
+@function p($target, $container) {
+    @return calc($target / $container) * 100%;
+}
+
+// Sass maps function
+@function color($color, $value: 'default') {
+    @return map-get(map-get($colors, $color), $value);
+}
+
+// Calculate px to rems
+@function rem($target, $context: $font-size) {
+    @return calc($target / $context) * 1rem;
+}
+
+// Media Queries
+@mixin mobile {
+    @media (min-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop-large {
+    @media (min-width: #{$desktop_large}) {
+        @content;
+    }
+}
