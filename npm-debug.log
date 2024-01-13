@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/bin/node',
+1 verbose cli   '/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   '@babel/register' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @babel/register@^7.13.8
+8 silly fetchNamedPackageData @babel/register
+9 silly mapToRegistry name @babel/register
+10 silly mapToRegistry scope (from package name) @babel
+11 verbose mapToRegistry no registry URL found in name for scope @babel
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/@babel%2fregister
+15 verbose request uri https://registry.npmjs.org/@babel%2fregister
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 16:09:37
+18 verbose request id bd79a984365c3cb0
+19 verbose etag W/"929cd4863666204e53dc693e7452d108"
+20 verbose lastModified Fri, 29 Dec 2023 20:01:31 GMT
+21 http request GET https://registry.npmjs.org/@babel%2fregister
+22 http 304 https://registry.npmjs.org/@babel%2fregister
+23 verbose headers { date: 'Sat, 13 Jan 2024 15:09:37 GMT',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'cf-ray': '844e8fb809d00b48-AMS',
+23 verbose headers   'cf-cache-status': 'HIT',
+23 verbose headers   age: '280',
+23 verbose headers   'cache-control': 'public, max-age=300',
+23 verbose headers   etag: '"929cd4863666204e53dc693e7452d108"',
+23 verbose headers   'last-modified': 'Fri, 29 Dec 2023 20:01:31 GMT',
+23 verbose headers   vary: 'Accept-Encoding',
+23 verbose headers   server: 'cloudflare' }
+24 silly get cb [ 304,
+24 silly get   { date: 'Sat, 13 Jan 2024 15:09:37 GMT',
+24 silly get     connection: 'keep-alive',
+24 silly get     'cf-ray': '844e8fb809d00b48-AMS',
+24 silly get     'cf-cache-status': 'HIT',
+24 silly get     age: '280',
+24 silly get     'cache-control': 'public, max-age=300',
+24 silly get     etag: '"929cd4863666204e53dc693e7452d108"',
+24 silly get     'last-modified': 'Fri, 29 Dec 2023 20:01:31 GMT',
+24 silly get     vary: 'Accept-Encoding',
+24 silly get     server: 'cloudflare' } ]
+25 verbose etag https://registry.npmjs.org/@babel%2fregister from cache
+26 verbose get saving @babel/register to /Users/sjoerdvermeijden/.npm/registry.npmjs.org/_40babel_252fregister/.cache.json
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 warn engine @babel/register@7.23.7: wanted: {"node":">=6.9.0"} (current: {"node":"5.0.0","npm":"3.3.6"})
+40 verbose stack Error: Missing required argument #1
+40 verbose stack     at andLogAndFinish (/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/fetch-package-metadata.js:30:3)
+40 verbose stack     at fetchPackageMetadata (/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/fetch-package-metadata.js:50:22)
+40 verbose stack     at resolveWithNewModule (/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/install/deps.js:401:12)
+40 verbose stack     at /Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/install/deps.js:180:5
+40 verbose stack     at /Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+40 verbose stack     at Array.forEach (native)
+40 verbose stack     at /Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+40 verbose stack     at Array.forEach (native)
+40 verbose stack     at asyncMap (/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+40 verbose stack     at exports.loadRequestedDeps (/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/install/deps.js:175:3)
+41 verbose cwd /Users/sjoerdvermeijden/Sites/frontend
+42 error Darwin 21.6.0
+43 error argv "/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/bin/node" "/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/bin/npm" "install" "--save-dev" "@babel/register"
+44 error node v5.0.0
+45 error npm  v3.3.6
+46 error code EMISSINGARG
+47 error typeerror Error: Missing required argument #1
+47 error typeerror     at andLogAndFinish (/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/fetch-package-metadata.js:30:3)
+47 error typeerror     at fetchPackageMetadata (/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/fetch-package-metadata.js:50:22)
+47 error typeerror     at resolveWithNewModule (/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/install/deps.js:401:12)
+47 error typeerror     at /Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/install/deps.js:180:5
+47 error typeerror     at /Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+47 error typeerror     at Array.forEach (native)
+47 error typeerror     at /Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+47 error typeerror     at Array.forEach (native)
+47 error typeerror     at asyncMap (/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+47 error typeerror     at exports.loadRequestedDeps (/Users/sjoerdvermeijden/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/install/deps.js:175:3)
+47 error typeerror This is an error with npm itself. Please report this error at:
+47 error typeerror     <http://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]
